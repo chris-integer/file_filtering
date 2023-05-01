@@ -27,7 +27,7 @@ while read -r line; do
   else
     echo "El archivo físico $field2 no existe."
   fi
-done < /Users/torres./Desktop/Scripting/control.txt
+done < control.txt
 
 #generacion de log
 
