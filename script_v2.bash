@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ruta del archivo de texto
-archivo_texto="/Users/torres./Desktop/Scripting/control.txt"
+archivo_texto="control.txt"
 
 # contador de registros
 cont_registros=0
@@ -14,7 +14,7 @@ while read linea; do
   campo3=$(echo "$linea" | cut -d "|" -f 3)
 
   # verificar si existe el archivo físico con el mismo nombre que el segundo campo
-  archivo_fisico="/Users/torres./Desktop/Scripting/$campo2"
+  archivo_fisico="$campo2"
   if [[ -e "$archivo_fisico" ]]; then
     echo "El archivo físico $campo2.txt existe."
   else
